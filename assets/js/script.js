@@ -20,7 +20,7 @@
         wrap.html('<tr><td colspan="6" class="text-center">Processing...</td></tr>');
         btn.prop('disabled', true).html('Processing request...');
 
-        jQuery.post(lbs.ajaxurl, jQuery(".lbs-form").serialize(), function(res){
+        jQuery.post(lbs.ajaxurl, data, function(res){
             btn.prop('disabled', false).html('Search');
             res = JSON.parse(res);
             note.html(res.message);
