@@ -1,0 +1,153 @@
+/* Wrappers */
+.text-left{ 
+	text-align: left;
+}
+.text-center{
+	text-align: center;
+}
+.text-right{
+	text-align: right;
+}
+.col{
+	float: left;
+	margin: 0 5px 10px;
+	width: 46%;
+}
+.clearfix{
+	clear: both;
+}
+.checked {
+    color: orange;
+}
+
+/* Table */
+.table {
+	border: 1px solid #eee;
+    border-collapse: collapse;
+    margin: 0 0 1.5em;
+    width: 100%;
+    box-shadow: 0px 4px 2px rgba(0,0,0,0.2);
+}
+.table tr {
+    border-bottom: 1px solid #ddd;
+}
+.table thead th {
+    border-bottom: 2px solid #ddd;
+}
+.table th {
+    padding: 0.4em;
+    text-align: left;
+}
+.table td {
+    padding: 0.4em 0.2em;
+}
+.table th:first-child, 
+.table td:first-child {
+    padding-left: 0.4em;
+}
+.table th:last-child, 
+.table td:last-child {
+    padding-right: 0.4em;
+}
+
+/* LBS Form */
+.lbs-form{
+	border: 1px solid #ddd;
+	margin: 0 0 40px;
+	padding: 20px;
+	box-shadow: 0px 4px 2px rgba(0,0,0,0.2);
+}
+.lbs-form .header{
+	margin-bottom: 40px;
+}
+.lbs-form .header,
+.lbs-form .footer{
+	text-align: center;
+}
+.lbs-form input{
+	padding: .2em .5em!important;
+}
+.lbs-form select{
+    height: 2em;
+    width: 100%;
+}
+.lbs-form button, 
+.lbs-form input[type="button"], 
+.lbs-form input[type="submit"] {
+    background-color: #222;
+    border: 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1em 2em;
+    text-shadow: none;
+    -webkit-transition: background 0.2s;
+    transition: background 0.2s;
+}
+.lbs-form button:hover, .lbs-form button:focus, 
+.lbs-form input[type="button"]:hover, .lbs-form input[type="button"]:focus, 
+.lbs-form input[type="submit"]:hover, .lbs-form input[type="submit"]:focus {
+    background: #767676;
+}
+
+.lbs-result-notice{
+	margin-bottom: 5px;
+}
+.lbs-results a, 
+.lbs-results a:hover, {
+	text-decoration: none!important;
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+}
+
+/* Archive Books */
+.lbs-books:after{
+    clear: both;	
+}
+.lbs-books ul{
+    display: -webkit-flex; 
+	display: -ms-flexbox; 
+	display: flex; 
+	-webkit-flex-wrap: wrap; 
+	-ms-flex-wrap: wrap; 
+	flex-wrap: wrap; 
+	overflow: hidden;
+}
+.lbs-books ul li.item-book {
+	float: left; 
+	width: calc(100% / 4 - 5px);
+	display: -webkit-flex; 
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
+/* Single */
+.lbs-single-book p{
+	margin-bottom: 10px;
+}
+
+/* Demo Purpose only for default wordpress theme - Twenty Seventeen */
+.single-featured-image-header,
+.entry-header{ display: none; }
+
+.single-book #primary, .tax-writer #primary,
+.tax-publisher #primary, .post-type-archive-book #primary{
+	width: 100%!important;
+}
+.lbs-books ul li.item-book img{
+	min-height: 250px; 
+	max-height: 250px; 
+}
+.prev.page-numbers, .next.page-numbers{
+	font-size: 16px!important;
+}
